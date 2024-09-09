@@ -38,7 +38,7 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    border:black 1px solid;
+    border:white 1px solid;
     width:15%;
     margin :10px 0;
     cursor :pointer;
