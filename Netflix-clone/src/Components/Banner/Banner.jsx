@@ -5,7 +5,7 @@ import './Banner.css'
 
 function Banner() {
   const [movies, setMovies] = useState(null);
-  console.log("hello");
+  
 
 
 useEffect(() => {
