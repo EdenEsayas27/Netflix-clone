@@ -1,44 +1,77 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
 }
-.Header_outer_container{
-    position:sticky;
-    top :0;
-    display :flex;
+
+.Header_outer_container {
+    position: sticky;
+    top: 0;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(20,20,20);
-   background-color: transparent;
-    height:10vh;
- 
-    color:white;
-    transition :all 0.5s;
-    transition-timing-function: ease-in;
-    z-index: 1;
- 
+    background-color: transparent; /* Initially transparent */
+    height: 10vh;
+    color: white;
+    transition: all 0.5s ease-in;
+    z-index: 100;
 }
-.nav_black{
-    background-color: rgb(20,20,20);
+
+
+
+
+.nav_black {
+    background-color: rgb(20, 20, 20); /* Turns black when scrolled */
 }
-.Header_container{
-    width :90%;
-    display:flex;
+
+.Header_container {
+    width: 90%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.Header_left ul{
-    width : 140%;
-    display:flex;
+
+.Header_left ul {
+    width: 140%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    cursor:pointer;
+    cursor: pointer;
 }
+
 .Header_right ul {
-    width:150%;
-    display :flex;
+    width: 150%;
+    display: flex;
     justify-content: space-around;
     list-style: none;
-    cursor:pointer;
+    cursor: pointer;
+}
+.navbar-nav .nav-link,
+.navbar-nav .nav-dropdown .dropdown-item {
+  color: white !important;
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+/* Make the text color white on large screens */
+.navbar-nav .nav-link,
+.navbar-nav .nav-dropdown .dropdown-item {
+  color: white !important;
+}
+
+/* Background color and text color for small screen collapsed navbar */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: black; /* Change this to any color you prefer */
+  }
+
+  
+}
+
+
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
