@@ -1,16 +1,16 @@
 {
-  "homepage": "https://EdenEsayas27.github.io/Netflix-clone",
   "name": "netflix-clone",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "build": "vite build",
     "predeploy": "vite build",
     "deploy": "gh-pages -d dist",
-    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
+  
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
