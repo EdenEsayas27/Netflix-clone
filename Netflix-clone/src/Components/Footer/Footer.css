@@ -1,49 +1,91 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
-.footer_outer_container{
-    background-color: #111;
-    color:grey;
-    display:flex;
-    justify-content: center;
-}
-.footer_inner_container{
-    width:60%;
 
+.footer_outer_container {
+    background-color: #111;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Change to column for smaller screens */
 }
-.footer_icons{
-    width:12%;
-    display:flex;
+
+.footer_inner_container {
+    width: 60%;
+    max-width: 1200px; /* Set a max width for larger screens */
+    margin: 0 auto; /* Center the footer on larger screens */
+}
+
+.footer_icons {
+    width: 12%;
+    display: flex;
     justify-content: space-between;
     margin-left: 10px;
     color: #ffff;
+}
 
-}
-.footer_data{
-    display:flex;
+.footer_data {
+    display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
-.footer_data ul{
+
+.footer_data ul {
     list-style: none;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height:12vh;
+    height: 12vh;
 }
+
 .footer_data ul li {
     cursor: pointer;
 }
-.Service_code{
-    display:flex;
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer_inner_container {
+        width: 80%; /* Increase width on smaller screens */
+    }
+    
+    .footer_icons {
+        width: 100%; /* Make icons full width on smaller screens */
+        justify-content: center; /* Center icons */
+        margin: 10px 0; /* Adjust margin */
+    }
+    
+    .footer_data {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+    }
+    
+    .footer_data ul {
+        height: auto; /* Allow height to be dynamic */
+    }
+}
+
+@media (max-width: 480px) {
+    .copy_write {
+        font-size: 10px; /* Adjust font size for smaller screens */
+    }
+    
+    .Service_code {
+        width: 80%; /* Increase width for better touch targets */
+    }
+}
+
+.Service_code {
+    display: flex;
     align-items: center;
     justify-content: center;
-    border:white 1px solid;
-    width:15%;
-    margin :10px 0;
-    cursor :pointer;
+    border: white 1px solid;
+    width: 15%;
+    margin: 10px 0;
+    cursor: pointer;
 }
-.copy_write{
+
+.copy_write {
     font-size: 12px;
     margin-bottom: 10px;
 }
