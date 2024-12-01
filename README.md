@@ -7,6 +7,7 @@ Hover effects on movie posters for a better user experience.
 Display movie trailers on click using react-youtube
 
 Technologies Used
+
 React.js: Frontend library for building the user interface.
 Axios: For making HTTP requests to the TMDB API.
 TMDB API: Source for movie and TV show data.
@@ -15,6 +16,7 @@ CSS: Custom styling for responsive design.
 
 Getting Started
 Prerequisites
+
 Ensure you have the following installed on your system:
 Node.js
 npm (Node Package Manager)
