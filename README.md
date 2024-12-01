@@ -18,13 +18,16 @@ Getting Started
 Prerequisites
 
 Ensure you have the following installed on your system:
+
 Node.js
+
 npm (Node Package Manager)
 
 Setup
-Clone the repository:
-git clone https://github.com/EdenEsayas27/Netflix-clone.git
+Clone the repository:git clone https://github.com/EdenEsayas27/Netflix-clone.git
+
 Navigate to the project directory:cd Netflix-clone
+
 Install dependencies:npm install
 
 Usage
