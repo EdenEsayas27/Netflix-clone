@@ -7,6 +7,8 @@ Responsive design for seamless use across devices.
 Hover effects on movie posters for a better user experience.
 Display movie trailers on click using react-youtube
 
+Demo :https://edenesayas-filmsite.netlify.app/
+
 Technologies Used
 
 React.js: Frontend library for building the user interface.
